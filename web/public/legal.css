@@ -1,0 +1,227 @@
+:root {
+  --ink: #332e3d;
+  --muted: #716a7d;
+  --faint: #a29aaa;
+  --line: #e3ddea;
+  --paper: #fffefe;
+  --bg: #fcfafe;
+  --primary: #806ab6;
+  --primary-dark: #65508e;
+  --rose: #a96d83;
+  --danger: #8d2922;
+  --danger-bg: #fff5f4;
+  --danger-line: #e7b5b0;
+  --radius: 20px;
+  --shadow: 0 10px 30px rgba(75, 64, 87, 0.05);
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  color: var(--ink);
+  background:
+    radial-gradient(900px 480px at 8% -12%, rgba(128, 106, 182, 0.16), transparent 55%),
+    radial-gradient(720px 420px at 100% 0%, rgba(169, 109, 131, 0.12), transparent 50%),
+    var(--bg);
+  font-family: Outfit, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.02rem;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: var(--primary-dark);
+  text-underline-offset: 0.16em;
+}
+
+a:hover { color: var(--primary); }
+
+a:focus-visible,
+.skip:focus-visible {
+  outline: 3px solid rgba(128, 106, 182, 0.45);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+.skip {
+  position: absolute;
+  left: 16px;
+  top: -48px;
+  z-index: 2;
+  padding: 8px 12px;
+  background: var(--paper);
+  color: var(--ink);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.skip:focus { top: 12px; }
+
+.wrap {
+  width: min(740px, calc(100% - 36px));
+  margin: 0 auto;
+  padding: 28px 0 80px;
+}
+
+.topnav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 20px;
+  margin-bottom: 36px;
+}
+
+.brand {
+  color: var(--primary);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.toplinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 18px;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.toplinks a { color: var(--muted); text-decoration: none; }
+.toplinks a[aria-current="page"],
+.toplinks a:hover { color: var(--primary-dark); }
+
+.kicker {
+  margin: 0 0 8px;
+  color: var(--rose);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: clamp(2rem, 7.2vw, 3.05rem);
+  line-height: 1.12;
+  letter-spacing: -0.04em;
+}
+
+.lead, .updated {
+  margin: 0;
+  color: var(--muted);
+}
+
+.lead { font-size: 1.08rem; max-width: 38rem; }
+
+.updated { margin-top: 10px; font-size: 0.92rem; }
+
+.toc {
+  display: grid;
+  gap: 8px;
+  margin: 28px 0 8px;
+  padding: 18px 20px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.toc a {
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.toc a:hover { color: var(--primary-dark); }
+
+section {
+  margin-top: 22px;
+  padding: 22px 22px 24px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+h2 {
+  margin: 0 0 10px;
+  font-size: 1.18rem;
+  letter-spacing: -0.03em;
+}
+
+h3 {
+  margin: 18px 0 6px;
+  font-size: 1rem;
+}
+
+p, li { color: var(--muted); }
+
+p:last-child, ul:last-child { margin-bottom: 0; }
+
+ul { padding-left: 1.15rem; }
+li + li { margin-top: 6px; }
+
+.meta {
+  display: grid;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.meta div {
+  padding: 14px 16px;
+  background: rgba(240, 236, 248, 0.7);
+  border-radius: 14px;
+}
+
+.meta strong {
+  display: block;
+  color: var(--ink);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.meta span { color: var(--muted); font-size: 0.95rem; }
+
+.notice {
+  padding: 14px 16px;
+  background: var(--danger-bg);
+  border: 1px solid var(--danger-line);
+  border-radius: 14px;
+  color: var(--danger);
+}
+
+.notice strong { color: var(--danger); }
+
+.placeholder {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.95em;
+  color: var(--ink);
+  background: #f3eff9;
+  padding: 0.08em 0.4em;
+  border-radius: 6px;
+}
+
+footer {
+  margin-top: 28px;
+  color: var(--faint);
+  font-size: 0.88rem;
+}
+
+footer p { color: var(--faint); }
+
+@media (min-width: 720px) {
+  .wrap { padding-top: 44px; }
+  section { padding: 26px 28px 28px; }
+}

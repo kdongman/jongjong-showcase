@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Booth Geometry Harness</title>
+    <link rel="stylesheet" href="/src/index.css" />
+    <style>
+      body { margin: 0; background: #f5f0fa; font-family: system-ui, sans-serif; }
+      .harness { display: grid; gap: 16px; padding: 24px; max-width: 960px; margin: 0 auto; }
+      .booth-stage-canvas { min-height: 320px; }
+      .label { font-size: 12px; color: #554; }
+    </style>
+  </head>
+  <body>
+    <div class="harness">
+      <div class="booth-stage-canvas">
+        <div
+          id="live-stage"
+          class="same-space-live-stage"
+          data-span="two_cell"
+          data-testid="live-stage"
+        ></div>
+      </div>
+      <div class="label">live two_cell</div>
+
+      <div
+        id="review-one"
+        class="same-space-scene"
+        data-span="one_cell"
+        data-testid="review-one"
+        style="width: 360px"
+      ></div>
+      <div class="label">review one_cell</div>
+
+      <div
+        id="review-two"
+        class="same-space-scene"
+        data-span="two_cell"
+        data-testid="review-two"
+        style="width: 360px"
+      ></div>
+      <div class="label">review two_cell</div>
+
+      <div
+        id="editor-slot"
+        class="booth-editor-slot"
+        data-span="one_cell"
+        data-testid="editor-slot"
+        style="width: 280px"
+      ></div>
+    </div>
+    <script type="module">
+      // Expose aspect helpers for Playwright assertions.
+      window.__boothAspect = (el) => {
+        const r = el.getBoundingClientRect();
+        return r.height > 0 ? r.width / r.height : 0;
+      };
+      window.__boothSize = (el) => {
+        const r = el.getBoundingClientRect();
+        return { width: r.width, height: r.height };
+      };
+    </script>
+  </body>
+</html>

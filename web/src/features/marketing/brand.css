@@ -1,0 +1,2 @@
+.wordmark{display:inline-flex;align-items:center;gap:9px;letter-spacing:-.055em}.brand-app-icon{width:32px;height:32px;border-radius:9px;flex:none;box-shadow:0 4px 11px rgba(78,58,108,.14)}.hero-tiger{position:absolute;z-index:4;right:-18px;bottom:34px;width:138px;height:auto;pointer-events:none;filter:drop-shadow(0 13px 13px rgba(67,48,81,.14));transform:rotate(3deg)}
+@media(max-width:720px){.brand-app-icon{width:29px;height:29px;border-radius:8px}.hero-tiger{right:-7px;bottom:11px;width:102px}}

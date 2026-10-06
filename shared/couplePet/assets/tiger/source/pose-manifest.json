@@ -1,0 +1,186 @@
+{
+  "sourceSheet": "cfa3c5ac-a2ce-41a4-82fd-54a146a8fde2.png",
+  "process": "deterministic crop/source-alpha cleanup/geometry normalization; no generative redraw",
+  "canonicalReference": "jongjong-tiger-canonical.png",
+  "canonicalCanvas": {
+    "width": 1536,
+    "height": 1208
+  },
+  "canonicalVisualCenterX": 738.0,
+  "canonicalGroundBaselineY": 1043.0,
+  "runtimeConnected": false,
+  "accepted": {},
+  "rejected": {
+    "curious": {
+      "status": "rejected",
+      "filename": "ggg-curious.png",
+      "candidatePath": "_rejected/ggg-curious.png",
+      "sourcePose": "curious",
+      "dimensions": {
+        "width": 1536,
+        "height": 1208
+      },
+      "visibleBounds": {
+        "left": 416,
+        "top": 153,
+        "right": 1138,
+        "bottom": 1051
+      },
+      "visualCenter": {
+        "x": 738.0,
+        "y": 602.0
+      },
+      "baselineY": 1043.0,
+      "footBaseline": 0.8634105960264901,
+      "renderOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "scaleCompensation": 1,
+      "sourceScale": 2.05,
+      "partialAlphaPixelCount": 490032,
+      "rejectionReasons": [
+        "Circular two-mark blush differs from canonical oval three-mark blush.",
+        "Eye construction/spacing differs from the current canonical face."
+      ],
+      "sha256": "c6c76cb5f83f424fda48c3c523d0f67df84a34d74227d6c9d481ce44b5ec80dd"
+    },
+    "play_ready": {
+      "status": "rejected",
+      "filename": "ggg-play-ready.png",
+      "candidatePath": "_rejected/ggg-play-ready.png",
+      "sourcePose": "play-ready",
+      "dimensions": {
+        "width": 1536,
+        "height": 1208
+      },
+      "visibleBounds": {
+        "left": 278,
+        "top": 75,
+        "right": 1219,
+        "bottom": 1062
+      },
+      "visualCenter": {
+        "x": 738.0,
+        "y": 568.5
+      },
+      "baselineY": 1043.0,
+      "footBaseline": 0.8634105960264901,
+      "renderOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "scaleCompensation": 1,
+      "sourceScale": 2.1,
+      "partialAlphaPixelCount": 506813,
+      "rejectionReasons": [
+        "Circular two-mark blush differs from canonical oval three-mark blush.",
+        "Face/cape construction is visibly simplified versus canonical Ggg."
+      ],
+      "sha256": "8b3f567e08aa8cbb39d588bc2e5000e3f13195d507d0aabf36bae276084e4a99"
+    },
+    "lying": {
+      "status": "rejected",
+      "filename": "ggg-lying.png",
+      "candidatePath": "_rejected/ggg-lying.png",
+      "sourcePose": "lying",
+      "dimensions": {
+        "width": 1536,
+        "height": 1208
+      },
+      "visibleBounds": {
+        "left": 241,
+        "top": 275,
+        "right": 1236,
+        "bottom": 1071
+      },
+      "visualCenter": {
+        "x": 738.0,
+        "y": 673.0
+      },
+      "baselineY": 1043.0,
+      "footBaseline": 0.8634105960264901,
+      "renderOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "scaleCompensation": 1,
+      "sourceScale": 2.15,
+      "partialAlphaPixelCount": 468332,
+      "rejectionReasons": [
+        "Circular two-mark blush differs from canonical oval three-mark blush.",
+        "Face and crown details regress from the current canonical artwork."
+      ],
+      "sha256": "19a80871543c75d7beda2dc8892b4ba2edc057fc41046b6f18c14aba0f7cef5d"
+    },
+    "proud": {
+      "status": "rejected",
+      "filename": "ggg-proud.png",
+      "candidatePath": "_rejected/ggg-proud.png",
+      "sourcePose": "proud",
+      "dimensions": {
+        "width": 1536,
+        "height": 1208
+      },
+      "visibleBounds": {
+        "left": 416,
+        "top": 65,
+        "right": 1181,
+        "bottom": 1052
+      },
+      "visualCenter": {
+        "x": 738.0,
+        "y": 558.5
+      },
+      "baselineY": 1043.0,
+      "footBaseline": 0.8634105960264901,
+      "renderOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "scaleCompensation": 1,
+      "sourceScale": 2.42,
+      "partialAlphaPixelCount": 559335,
+      "rejectionReasons": [
+        "Circular two-mark blush differs from canonical oval three-mark blush.",
+        "Source head/body scale is materially smaller than canonical and requires excessive compensation."
+      ],
+      "sha256": "ee9b0faec1cf6c1b6cd2511a8db155f90a86552c24f3ee07ce4aff9f56217105"
+    },
+    "curious_v2": {
+      "status": "rejected",
+      "filename": "ggg-curious-v2.png",
+      "candidatePath": "_rejected/ggg-curious-v2.png",
+      "sourceFile": "f65929d4-bdbe-4594-b449-58fb4b50122a.png",
+      "sourcePose": "curious-v2",
+      "dimensions": {
+        "width": 1536,
+        "height": 1208
+      },
+      "visibleBounds": {
+        "left": 413,
+        "top": 101,
+        "right": 1121,
+        "bottom": 1046
+      },
+      "visualCenter": {
+        "x": 738.0,
+        "y": 573.5
+      },
+      "baselineY": 1043.0,
+      "footBaseline": 0.8634105960264901,
+      "renderOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "scaleCompensation": 1,
+      "sourceScale": 1.075,
+      "partialAlphaPixelCount": 488265,
+      "rejectionReasons": [
+        "Left cheek remains a round two-mark blush instead of canonical oval three-mark blush.",
+        "Body/leg silhouette is taller and less compact than current canonical Ggg."
+      ],
+      "sha256": "ad961cc54da7371136595e238f9e2ecb2b33ac2eacecba4dd1c1c86fcaa99528"
+    }
+  }
+}

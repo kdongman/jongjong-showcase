@@ -1,0 +1,99 @@
+/* Mobile is a composed layout, not a reduced desktop canvas. */
+.mobile-feature-gallery { display: none; }
+@media (max-width: 720px) {
+  .marketing { overflow-x: clip; }
+  .site-header, .section-shell, .site-footer { width: min(100% - 32px, 520px); }
+  .site-header { height: 68px; }
+  .wordmark { font-size: 1.28rem; }
+  .menu-toggle { min-width: 44px; min-height: 44px; display: grid; place-content: center; }
+  .site-nav { top: 58px; right: 0; width: min(280px, calc(100vw - 32px)); padding: 12px; }
+  .site-nav > a, .locale-select { min-height: 44px; display: flex; align-items: center; }
+  .locale-select select { min-height: 36px; width: 100%; }
+  .header-store { width: fit-content; margin: 7px 0 2px; }
+
+  .product-led .hero { padding: 46px 0 62px; text-align: left; }
+  .hero h1, .product-led .hero h1 { font-size: clamp(3.45rem, 16.2vw, 4.7rem); letter-spacing: -.075em; }
+  .hero-copy .eyebrow { margin-bottom: 14px; }
+  .hero-lead, .product-led .hero-lead { max-width: 35ch; margin: 20px 0 24px; font-size: 1rem; line-height: 1.58; }
+  .hero-actions { justify-content: flex-start; gap: 17px; }
+  .text-cta { min-height: 44px; display: inline-flex; align-items: center; }
+  .product-led .hero-art { width: 100%; height: 455px; margin-top: 23px; }
+  .hero-phone { width: 205px; height: 445px; transform: rotate(3deg) translateX(18px); }
+  .hero-room-peek { width: 116px; height: 252px; left: 1px; bottom: 4px; transform: rotate(-6deg); }
+  .hero-tiger { width: 96px; right: -3px; bottom: 5px; }
+
+  .product-led .soft-intro { padding: 68px 0 78px; text-align: left; }
+  .soft-intro h2 { max-width: 8.8ch; }
+  .soft-intro > p:last-child { margin: 21px 0 0; }
+  .story-moment { gap: 22px; padding-bottom: 68px; text-align: left; }
+  .story-copy { margin: 0; max-width: 37ch; }
+  .moment-visual { height: 415px; }
+  .moment-visual:before { width: 310px; height: 310px; }
+  .moment-phone { width: 188px; height: 408px; }
+
+  .room-inner { padding: 68px 0; gap: 30px; text-align: left; }
+  .room-copy { padding-left: 0; }
+  .room-visual { width: 100%; display: grid; place-items: center; }
+  .room-phone { width: min(226px, 65vw); height: auto; aspect-ratio: 1320 / 2868; }
+  .room-actions { font-size: .86rem; }
+  /* Secondary experiences move into the swipe gallery below. Desktop keeps its full compositions. */
+  .play-feature, .together-feature { display: none; }
+  .mobile-feature-gallery { display: block; padding: 56px 0 50px; overflow: hidden; }
+  .gallery-heading { display: flex; align-items: end; justify-content: space-between; gap: 16px; margin-bottom: 21px; }
+  .gallery-heading .eyebrow { margin-bottom: 10px; }
+  .gallery-heading h2 { font-size: clamp(2.25rem, 10vw, 3.05rem); letter-spacing: -.065em; }
+  .gallery-heading > span { flex: none; padding-bottom: 4px; color: var(--purple-deep); font-size: .7rem; font-weight: 700; white-space: nowrap; }
+  .gallery-rail { display: flex; gap: 13px; overflow-x: auto; padding: 0 8vw 10px 16px; scroll-snap-type: x mandatory; scroll-padding-left: 16px; overscroll-behavior-x: contain; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .gallery-rail::-webkit-scrollbar { display: none; }
+  .gallery-card { flex: 0 0 min(84vw, 344px); min-height: 406px; display: grid; grid-template-rows: 292px auto; overflow: hidden; scroll-snap-align: start; border: 1px solid #e9e1ef; border-radius: 20px; background: #fffdfd; box-shadow: 0 12px 28px rgba(64,47,79,.08); }
+  .gallery-card .product-shot { width: 132px; height: 287px; justify-self: center; align-self: end; border: 5px solid #fff; border-radius: 20px 20px 0 0; box-shadow: 0 12px 28px rgba(64,47,79,.12); }
+  .gallery-card:nth-child(2) .product-shot { transform: rotate(3deg); }
+  .gallery-card:nth-child(3) .product-shot { transform: rotate(-2deg); }
+  .gallery-card:nth-child(4) .product-shot { transform: rotate(2deg); }
+  .gallery-card > div { padding: 16px 18px 18px; border-top: 1px solid #eee8f1; }
+  .gallery-card h3 { margin: 0 0 5px; color: var(--ink); font-size: 1.03rem; letter-spacing: -.035em; }
+  .gallery-card p { margin: 0; color: var(--muted); font-size: .82rem; line-height: 1.45; }
+  .play-feature { padding: 70px 0; gap: 33px; text-align: left; }
+  .play-visual, .drawing-visual { height: 430px; }
+  .play-visual:before { width: 290px; height: 290px; }
+  .game-phone { width: 192px; height: 417px; transform: rotate(-3deg) translateX(-16px); }
+  .drawing-phone { width: 125px; height: 272px; right: 0; bottom: 0; }
+  .drawing-note { max-width: 118px; padding: 7px 8px; font-size: .58rem; }
+  .drawing-note-one { right: -2px; top: 18px; }
+  .drawing-note-two { left: 0; bottom: 24px; }
+
+  .letters-feature { padding: 68px 0 45px; text-align: left; }
+  .letters-copy { margin: 0; }
+  .letter-steps { justify-content: flex-start; gap: 7px; }
+  .letter-gallery { height: 322px; margin-top: 24px; display: grid; place-items: center; }
+  .letter-gallery .product-shot:not(.letter-handwritten) { display: none; }
+  .letter-handwritten { position:relative; width: 148px; height: 321px; left: auto; top: auto; transform: rotate(2deg); }
+  .letters-home { width: 108px; height: 235px; top: 79px; }
+  .letter-handwritten { width: 132px; height: 286px; left: 26%; top: 12px; }
+  .letter-envelope { width: 89px; height: 193px; right: 0; top: 33px; }
+  .letter-opened { width: 98px; height: 213px; right: 7%; bottom: 0; }
+  .together-feature { padding: 68px 0; text-align: left; }
+  .together-visual { height: 476px; margin-top: 31px; }
+  .together-phone { width: 184px; height: 399px; left: 2%; top: 34px; }
+  .dates-phone { width: 120px; height: 261px; right: 0; top: 4px; }
+  .us-phone { width: 91px; height: 197px; }
+  .timeline-phone { width: 101px; height: 219px; right: 6%; }
+
+  .booth-teaser { margin-bottom: 66px; padding: 48px 22px; border-radius: 24px; text-align: left; }
+  .booth-visual { width: 245px; height: 206px; margin: 39px auto 0; }
+  .booth-shot { width: 151px; }
+  .product-led .founder-note { padding: 62px 0 53px; }
+  .final-cta { padding: 23px 0 82px; }
+  .final-cta .app-store-badge { display: inline-block; }
+  .site-footer { padding-top: 29px; }
+}
+
+@media (max-width: 390px) {
+  .hero h1, .product-led .hero h1 { font-size: clamp(3.1rem, 15.5vw, 3.7rem); }
+  .product-led .hero-art { height: 416px; }
+  .hero-phone { width: 190px; height: 412px; }
+  .hero-room-peek { width: 105px; height: 228px; }
+  .hero-tiger { width: 82px; }
+  .game-phone { width: 177px; height: 384px; }
+  .drawing-phone { width: 116px; height: 252px; }
+}

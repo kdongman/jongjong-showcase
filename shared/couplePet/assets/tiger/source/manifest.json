@@ -1,0 +1,19 @@
+{
+  "filename": "jongjong-tiger-canonical.png",
+  "blink_filename": "jongjong-tiger-blink.png",
+  "happy_filename": "ggg-happy.png",
+  "sleeping_filename": "ggg-sleeping.png",
+  "width": 1536,
+  "height": 1208,
+  "mode": "RGBA",
+  "has_alpha": true,
+  "sha256": "bb86fc2461ffcaae2b55f38a4e587c776dfebf88d98067333ec196b0cb4d9f34",
+  "blink_sha256": "329cf55966fcc6e66c8d93682bea0808739988d8c557378c1bddea80deacc251",
+  "happy_sha256": "09aaf79b71074895444744a6a790d15b00b9c77bf6ab41ee3c87e9078e6cc95f",
+  "sleeping_sha256": "8292457f534affa5f8834f3e4724455530b6d44078ccdebf637cef75dbf0b23e",
+  "blink_source": "generated-from-canonical-eye-only",
+  "happy_source": "generated-from-canonical-soft-squint-smile-warm-blush",
+  "sleeping_source": "generated-from-canonical-closed-eye-only",
+  "notes": "IDLE is the master artwork. Blink/happy/sleeping are face-only derivatives (outsideFaceDiffPixelCount=0); happy keeps awake half-lidded eyes with a soft lower-lid squint plus a contented smile and warmer blush, sleeping uses distinct fully closed lids, and opaque bounds match canonical. Scripts: generatePetBlinkAssets.mjs / generateTigerExpressions.mjs. Tail-blob cleanup preserved on canonical.",
+  "intended_project_path": "shared/couplePet/assets/tiger/source/jongjong-tiger-canonical.png"
+}
